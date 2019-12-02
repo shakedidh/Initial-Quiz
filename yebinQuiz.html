@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>초성퀴즈</h1>
+    <h2>ㅂㅈㅎ</h2>
+    <h3>hint</h3>
+    <input type="text" id="in" placeholder="답을 입력하세요"><br>
+    <button type="submit" onclick=button_click()>확인</button>
+    <button>다음 ></button>
+    <script>
+        let question = ["ㅂㅈㅎ"];
+        let answer = "박종혁";
+        
+        function button_click() {
+            let inputValue = document.getElementById("in").value;
+            inputValue == answer ? alert("정답입니다") : alert("틀렸습니다");
+            console.log(answer);
+            console.log(inputValue);
+        }
+       
+    </script>
+</body>
+</html>
